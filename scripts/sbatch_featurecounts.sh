@@ -22,7 +22,7 @@ mkdir -p $COUNTS_OUTDIR
 # Run featureCounts on all BAM files from STAR
 # -t flag specifies features in column 3 of GTF to count; default is exon.
 featureCounts \
--a $GTF_REF \
+-a $GENOME_GTF \
 -o $COUNTS_OUTDIR/$COUNTS_FILE \
 -p \
 -t CDS \
