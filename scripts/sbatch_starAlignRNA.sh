@@ -37,7 +37,7 @@ echo "Running STAR on files $r1 and $r2"
 # STAR time
 # note alignIntronMax=1 to disallow introns for bacteria
 # BAM sorting seems to be memory intensive.  Set an available amount of memory using limitBAMsortRAM 
-echo STAR --runMode alignReads \
+STAR --runMode alignReads \
 --genomeDir $GENOME_REF_DIR \
 --outSAMtype BAM SortedByCoordinate \
 --readFilesIn $r1 $r2 \
