@@ -24,7 +24,7 @@ Symlinks to sequencing results (submitted to SeqCenter Jan 11, 2024) were made i
 
 ## QC with fastqc
 
-
+Read-level quality control was performed with FastQC version 0.11.9.
 
 ## Trimming
 
@@ -32,4 +32,8 @@ No quality or adapter trimming was performed, as per results of fastQC
 
 ## Reference genome prep
 
+A reference genome was prepared using STAR in genomeGenerate mode.
 
+## Alignment
+
+A sample sheet (listing sample names and paired fastq files) was prepared using `prep_sample_sheet.sh`

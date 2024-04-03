@@ -17,6 +17,10 @@ module load OpenJDK/19.0.1
 module load fastqc/0.11.9
 source ./config.cfg
 
+echo "fastq file directory: $FASTQDIR"
+echo "output directory for fastQC: $FASTQC_OUT_DIR"
+echo "script directory: $SCRIPT_DIR"
+
 mkdir -p $FASTQDIR $FASTQC_OUT_DIR $SCRIPT_DIR
 
 echo "Running fastqc in directory $FASTQDIR"

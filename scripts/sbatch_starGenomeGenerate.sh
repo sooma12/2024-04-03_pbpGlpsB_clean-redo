@@ -11,11 +11,16 @@
 
 ## Usage: sbatch sbatch_starGenomeGenerate.sh
 
+echo "loading tools for STAR genomeGenerate"
 module load star/2.7.11a
 
 # Load config file
 source ./config.cfg
 # Relevant variables: GENOME_REF_DIR_OUT, FASTA_IN, GTF_IN
+echo "genome fasta file used: $FASTA_IN"
+echo "genome gtf file used: $GTF_IN"
+echo "genome reference (output) location: $GENOME_REF_DIR"
+
 NTHREADS=4
 
 # STAR requires the output directory be pre-made
