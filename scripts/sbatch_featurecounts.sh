@@ -25,5 +25,5 @@ featureCounts \
 -a $GENOME_GTF \
 -o $COUNTS_OUTDIR/$COUNTS_FILE \
 -p \
--t CDS \
+-t transcript \
 $STAR_MAPPED_DIR/*.bam

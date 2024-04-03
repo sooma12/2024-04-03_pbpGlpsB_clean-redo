@@ -32,7 +32,6 @@ STAR --runMode genomeGenerate \
 --genomeDir $GENOME_REF_DIR \
 --genomeFastaFiles $GENOME_FASTA \
 --sjdbGTFfile $GENOME_GTF \
---sjdbGTFfeatureExon CDS \
+--sjdbGTFfeatureExon transcript \
 --genomeSAindexNbases 9 \
---runThreadN $NTHREADS \
---sjdbGTFtagExonParentTranscript Parent
+--runThreadN $NTHREADS
