@@ -1,1 +1,21 @@
 # 2024-04-03_pbpGlpsB_clean-redo
+Date started: 2024-04-03
+Goal: Perform analysis of ∆pbpG and ∆lpsB RNA samples, originally analyzed in Jan 2024
+
+## Sample preparation and processing
+Followed RNA isolation, reverse transcription, and qPCR protocol to isolate RNA.
+Protocol document (followed up to step 22): https://docs.google.com/document/d/1iIDJtlX0jUI4P77D0M6SsOHyaJRPXctn8PhxoLuhKHk/edit
+(EG's protocol with MWS's clarifications)
+Aliquots of 20 uL of RNA at 100 ng/uL (totaling 2 ug) were made in separate tubes.  These samples were frozen at -80C before shipment to SeqCenter (on ~10 lbs dry ice).
+
+## Library prep and sequencing
+Library preparation and sequencing were performed at SeqCenter.  The following is copy/pasted from their methods pdf (provided with data):
+```text
+Samples were DNAse treated with Invitrogen DNAse (RNAse free). Library preparation was
+performed using Illumina’s Stranded Total RNA Prep Ligation with Ribo-Zero Plus kit and 10bp
+unique dual indices (UDI). Sequencing was done on a NovaSeq X Plus, producing paired end
+150bp reads. Demultiplexing, quality control, and adapter trimming was performed with bcl-
+convert (v4.2.4)1. Sequencing statistics are included in the ‘RNA Sequencing Stats.xlsx’ file.
+```
+
+Sequencing results (submitted to SeqCenter Jan 11, 2024) were copied to this directory.

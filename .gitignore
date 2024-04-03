@@ -1,0 +1,11 @@
+*.log
+*.err
+*.gz
+*.fastq
+logs/*
+fastqc_output_pretrim/fastqc_zip/*
+input/*
+ref/*
+data/*
+software/*
+backup_data/*
