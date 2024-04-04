@@ -9,3 +9,5 @@ ref/*
 data/*
 software/*
 backup_data/*
+fastqc_output_pretrim/*
+multiqc_data/*
