@@ -41,3 +41,10 @@ The NZ_CP012004.gff3 file download from NCBI Nucleotide was converted to a gtf f
 A sample sheet (listing sample names and paired fastq files) was prepared using `prep_sample_sheet.sh`
 
 
+## Analysis
+
+Functional class overrepresentation was analyzed using the FUNAGE-Pro web server at http://funagepro.molgenrug.nl/.
+- Reference genome `Selected RefSeq: Acinetobacter baumannii ATCC 17978-mff ASM107767v1 genomic`
+
+Genes were filtered by padj < 0.1 and either log2FoldChange >1 for upregulated genes or <1 for downregulated genes.
+Corresponding lists of DEG locus tags were pasted into the web server text box.  The FUNGAGE-Pro main table for each was downloaded.
