@@ -9,7 +9,7 @@
 #SBATCH --mail-type=END
 #SBATCH --mail-user=soo.m@northeastern.edu
 
-## Usage: sbatch sbatch_starGenomeGenerate.sh
+## Usage: sbatch 3_sbatch_starGenomeGenerate.sh
 
 echo "loading tools for STAR genomeGenerate"
 module load star/2.7.11a

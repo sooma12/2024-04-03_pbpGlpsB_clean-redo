@@ -1,0 +1,15 @@
+Status	/work/geisingerlab/Mark/rnaSeq/2024-04-03_pbpGlpsB_clean-redo/data/mapped/DlpsB_1Aligned.sortedByCoord.out.bam	/work/geisingerlab/Mark/rnaSeq/2024-04-03_pbpGlpsB_clean-redo/data/mapped/DlpsB_2Aligned.sortedByCoord.out.bam	/work/geisingerlab/Mark/rnaSeq/2024-04-03_pbpGlpsB_clean-redo/data/mapped/DlpsB_3Aligned.sortedByCoord.out.bam	/work/geisingerlab/Mark/rnaSeq/2024-04-03_pbpGlpsB_clean-redo/data/mapped/DpbpG_1Aligned.sortedByCoord.out.bam	/work/geisingerlab/Mark/rnaSeq/2024-04-03_pbpGlpsB_clean-redo/data/mapped/DpbpG_2Aligned.sortedByCoord.out.bam	/work/geisingerlab/Mark/rnaSeq/2024-04-03_pbpGlpsB_clean-redo/data/mapped/DpbpG_3Aligned.sortedByCoord.out.bam	/work/geisingerlab/Mark/rnaSeq/2024-04-03_pbpGlpsB_clean-redo/data/mapped/WT_1Aligned.sortedByCoord.out.bam	/work/geisingerlab/Mark/rnaSeq/2024-04-03_pbpGlpsB_clean-redo/data/mapped/WT_2Aligned.sortedByCoord.out.bam	/work/geisingerlab/Mark/rnaSeq/2024-04-03_pbpGlpsB_clean-redo/data/mapped/WT_3Aligned.sortedByCoord.out.bam
+Assigned	11385653	16883051	17944586	16387444	16121673	18212196	15635493	17504683	18104132
+Unassigned_Unmapped	0	0	0	0	0	0	0	0	0
+Unassigned_Read_Type	0	0	0	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0	0	0
+Unassigned_MultiMapping	1097324	1656676	2412546	1548346	1772546	1904554	6526880	1688662	1743742
+Unassigned_Secondary	0	0	0	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0	0	0	0
+Unassigned_NoFeatures	75711	114483	153799	123804	106853	144975	123740	128745	141682
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0	0	0
+Unassigned_Ambiguity	1239948	1755375	1929739	1814867	1722826	2048785	1839957	2007753	2073268

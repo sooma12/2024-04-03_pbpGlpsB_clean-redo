@@ -1,5 +1,5 @@
 #!/bin/bash
-# 4_prep_sample_sheet_for_starAlign.sh
+# 2_make_sample_sheet.sh
 # Makes a sample_sheet.txt containing sample ID and R1 and R2 filepaths
 # Assumes each sample file is in the format: WT_1_S84_trimmed_R2.fastq
 # Script uses a split on "_" to grab the sample ID, e.g. WT_1.  Must modify this if sample file names are different!

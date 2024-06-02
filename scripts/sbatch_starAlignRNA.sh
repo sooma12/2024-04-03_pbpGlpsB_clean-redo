@@ -11,7 +11,7 @@
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=soo.m@northeastern.edu
 
-## Usage: sbatch sbatch_starAlignRNA.sh
+## Usage: sbatch 5_sbatch_starAlignRNA.sh
 echo "Loading tools"
 module load star/2.7.11a
 source ./config.cfg
@@ -24,7 +24,7 @@ echo "alignment output directory containing .bam files: ${DATA_DIR}/mapped/"
 mkdir -p ${DATA_DIR}/mapped
 
 # Array job!  Used my sample sheet technique from 2023-11-13 breseq for this.
-# NOTE!!! sample sheet prep is moved to prep_sample_sheet_for_starAlign.sh.
+# NOTE!!! sample sheet prep is moved to 4_prep_sample_sheet_for_starAlign.sh.
 # Run that script before this one!
 
 # sed and awk read through the sample sheet and grab each whitespace-separated value

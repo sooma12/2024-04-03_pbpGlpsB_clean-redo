@@ -1,4 +1,4 @@
-# check_md5sums.py
+# 0_check_md5sums.py
 # MWS Jan 29th, 2024
 """
 Take a SeqCenter xlsx file, e.g. "RNA Sequencing Stats.xlsx"
@@ -8,10 +8,10 @@ Print output that verifies md5sum values
 *Run this on the cluster - Mac devices have md5 instead of md5sum, resulting in some wonkiness.
 USAGE:
 (first, run this to make the md5sum file: `md5sum * > gz_md5sums.txt`)
-python check_md5sums.py <xlsx_file> <md5sum_file>
+python 0_check_md5sums.py <xlsx_file> <md5sum_file>
 
 example:
-python check_md5sums.py '/work/geisingerlab/Mark/rnaSeq/2024-01_rnaseq_pbpGlpsB/input/Illumina RNA Reads/RNA Seq Statistics.xlsx' /work/geisingerlab/Mark/rnaSeq/2024-01_rnaseq_pbpGlpsB/input/Illumina RNA Reads/gz_md5sums.txt
+python 0_check_md5sums.py '/work/geisingerlab/Mark/rnaSeq/2024-01_rnaseq_pbpGlpsB/input/Illumina RNA Reads/RNA Seq Statistics.xlsx' /work/geisingerlab/Mark/rnaSeq/2024-01_rnaseq_pbpGlpsB/input/Illumina RNA Reads/gz_md5sums.txt
 
 """
 
