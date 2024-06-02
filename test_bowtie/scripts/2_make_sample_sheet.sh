@@ -5,7 +5,7 @@
 # Script uses a split on "_" to grab the sample ID, e.g. WT_1.  Must modify this if sample file names are different!
 # Example output line:  WT_1 /path/to/WT_1_R1.fastq /path/to/WT_1_R2.fastq
 
-source ./config.cfg
+source ./config_bowtie.cfg
 
 # Create .list files with R1 and R2 fastqs.  Sort will put them in same orders, assuming files are paired
 find ${FASTQDIR} -maxdepth 1 -name "*.fastq" | grep -e "_R1" | sort > R1.list
