@@ -11,12 +11,24 @@
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=soo.m@northeastern.edu
 
+# Note, learned a nice trick for arrays, but I think you have to define the path explicitly:
+# This SBATCH header would start array jobs for each file *.txt
+# --array=0-$(ls *.txt | wc -l) script.sh
+
 echo "Loading tools"
 module load samtools/1.19.2
 
 source ./config_bowtie.cfg
 
-for file in "${DATA_DIR}"/mapped/*.sam; do
-  samtools view -bS "${file}" > "${file}".bam
-  samtools sort "${file}".bam -o "${file}"_sorted.bam
-done
+# Get array of sam files
+# shellcheck disable=SC2207
+sams_array=($(ls -d ${DATA_DIR}/mapped/*.sam))
+
+# Get specific file for this array task
+current_file=${sams_array[$SLURM_ARRAY_TASK_ID]}
+
+current_name=$(basename "$current_file")
+current_name_no_ext="${current_name%.*}"
+
+samtools view -bS "${current_file}" > "${current_name_no_ext}".bam
+samtools sort "${current_name_no_ext}".bam -o "${current_name_no_ext}"_sorted.bam
