@@ -32,9 +32,8 @@ current_file=${sams_array[$SLURM_ARRAY_TASK_ID]}
 current_name=$(basename "$current_file")
 current_name_no_ext="${current_name%.*}"
 
-samtools view -bS "${current_file}" > "${current_name_no_ext}".bam
-samtools sort "${current_name_no_ext}".bam -o "${current_name_no_ext}"_sorted.bam
-
+samtools view -bS "${current_file}" > ${MAPPED_DIR}/${current_name_no_ext}.bam
+samtools sort ${MAPPED_DIR}/${current_name_no_ext}.bam -o "${MAPPED_DIR}/${current_name_no_ext}"_sorted.bam
 mkdir -p $MAPPED_DIR/intermediate_files
 mv ${current_file} intermediate_files/
 mv "${current_name_no_ext}".bam intermediate_files/
