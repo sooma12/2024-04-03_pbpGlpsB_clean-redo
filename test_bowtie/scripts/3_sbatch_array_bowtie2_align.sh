@@ -11,7 +11,7 @@
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=soo.m@northeastern.edu
 
-## Usage: sbatch 3_array_bowtie2_align.sh
+## Usage: sbatch 3_sbatch_array_bowtie2_align.sh
 echo "Loading tools"
 module load bowtie/2.5.2
 

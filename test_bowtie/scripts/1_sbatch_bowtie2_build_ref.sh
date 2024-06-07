@@ -10,7 +10,7 @@
 #SBATCH --mail-type=END
 #SBATCH --mail-user=soo.m@northeastern.edu
 
-## Usage: sbatch 1_bowtie2_build_ref.sh
+## Usage: sbatch 1_sbatch_bowtie2_build_ref.sh
 
 echo "loading tools for STAR genomeGenerate"
 module load bowtie/2.5.2
