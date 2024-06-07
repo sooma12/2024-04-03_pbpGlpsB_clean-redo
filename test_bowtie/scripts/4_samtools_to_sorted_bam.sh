@@ -25,10 +25,10 @@ source ./config_bowtie.cfg
 sams_array=($(ls -d ${DATA_DIR}/mapped/*.sam))
 
 # Get specific file for this array task
-current_file=${sams_array[$SLURM_ARRAY_TASK_ID]}
+current_file=${sams_array[$SLURM_ARRAY_TASK_ID-1]}
 
 current_name=$(basename "$current_file")
 current_name_no_ext="${current_name%.*}"
 
-samtools view -bS "${current_file}" > "${current_name_no_ext}".bam
-samtools sort "${current_name_no_ext}".bam -o "${current_name_no_ext}"_sorted.bam
+samtools view -bS "${current_file}" > "${DATA_DIR}/mapped/${current_name_no_ext}".bam
+samtools sort "${DATA_DIR}/mapped/${current_name_no_ext}".bam -o "${DATA_DIR}/mapped/${current_name_no_ext}"_sorted.bam
