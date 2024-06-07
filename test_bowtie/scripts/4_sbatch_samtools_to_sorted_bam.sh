@@ -20,9 +20,11 @@ module load samtools/1.19.2
 
 source ./config_bowtie.cfg
 
+echo "Looking for .sam files and outputting sorted bams in $MAPPED_DIR"
+
 # Get array of sam files
 # shellcheck disable=SC2207
-sams_array=($(ls -d ${DATA_DIR}/mapped/*.sam))
+sams_array=($(ls -d ${MAPPED_DIR}/*.sam))
 
 # Get specific file for this array task
 current_file=${sams_array[$SLURM_ARRAY_TASK_ID-1]}
@@ -30,5 +32,13 @@ current_file=${sams_array[$SLURM_ARRAY_TASK_ID-1]}
 current_name=$(basename "$current_file")
 current_name_no_ext="${current_name%.*}"
 
+<<<<<<< HEAD:test_bowtie/scripts/4_samtools_to_sorted_bam.sh
 samtools view -bS "${current_file}" > "${DATA_DIR}/mapped/${current_name_no_ext}".bam
 samtools sort "${DATA_DIR}/mapped/${current_name_no_ext}".bam -o "${DATA_DIR}/mapped/${current_name_no_ext}"_sorted.bam
+=======
+samtools view -bS "${current_file}" > ${MAPPED_DIR}/${current_name_no_ext}.bam
+samtools sort ${MAPPED_DIR}/${current_name_no_ext}.bam -o "${MAPPED_DIR}/${current_name_no_ext}"_sorted.bam
+mkdir -p $MAPPED_DIR/intermediate_files
+mv ${current_file} intermediate_files/
+mv "${current_name_no_ext}".bam intermediate_files/
+>>>>>>> e2289bf2da4e670c455c36f3c7feda1069b6a3bc:test_bowtie/scripts/4_sbatch_samtools_to_sorted_bam.sh
